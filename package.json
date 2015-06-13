@@ -1,0 +1,20 @@
+{
+  "name": "CalculatorFun",
+  "version": "0.0.1",
+  "description": "Built calculator with Javascript, HTML, CSS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Christopherson",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-util": "^3.0.5"
+  }
+}
