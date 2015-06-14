@@ -2,8 +2,10 @@
   box-sizing: border-box;
 }
 html, body{
-	min-height: 100%;
-	min-width: 100%;
+	min-height: 100vh;
+	min-width: 100vw;
+	padding: 0;
+	margin: 0;
 }
 body{
 	font-family: helvetica;	
@@ -20,9 +22,10 @@ body{
 	background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
 	main{
-		border: 1px solid black;
+		border: 3px solid black;
 		background-color: #f2f2f2;
-		width: 400px;
+		width: 100vw;
+		height: 100vh;
 	}
 }
 
@@ -32,7 +35,7 @@ div#calcResults{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	height: 125px;
+	height: 16.6vh;
 	background-color: hsla(0, 0%, 0%, 1);
 	color: hsla(255, 90%, 100%, 1);
 	text-align: right;
@@ -45,7 +48,9 @@ div.rows{
 	width: 100%;
 	display: flex;
 	button{
-		flex: 1;
+		flex: none;
+		width: 25vw;
+		height: 16.6vh;
 		padding: 30px;
 		background-color: hsla(228, 5%, 90%, 1);
 		color: hsla(0, 0%, 0%, 1);
@@ -71,10 +76,10 @@ div.rows{
 	}
 	&#row5{
 		button{
-			//flex: 1;
 			&#zero{
-				flex: 4;
-				padding-right: 17px;
+				flex: none;
+				width: 50vw;
+				//padding-right: 17px;
 			}	
 		}
 	}
